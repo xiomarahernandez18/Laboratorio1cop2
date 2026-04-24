@@ -1,69 +1,38 @@
-# Laboratorio1cop2
-Este repositorio consiste en plantear una situación problematica que se pueda resolver mediante una pagina wed 
+# laboratorio-1
 
-Estudiante: CARMEN XIOMARA HERNANDEZ CASTILLO 
-Codigo: SMSS107724
+This template should help get you started developing with Vue 3 in Vite.
 
-SISTEMA DE REGISTROS DE ESTUDIANTES PARA TUTORIAS 
+## Recommended IDE Setup
 
-SITUACION PROBLEMATICA 
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
+## Recommended Browser Setup
 
-En muchos institutos y academias de la zona, el registro de estudiantes para tutorías se realiza de forma manual, lo que genera desorden, pérdida de información y dificultad para llevar control de asistencia.
-Este problema afecta al sector educativo, especialmente a centros de estudio que no cuentan con sistemas digitales.
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-SOLUCION PROPUESTA 
+## Customize configuration
 
-Se desarrolló una aplicación web con Vue.js que permite:
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-Registrar estudiantes en tutorías
-Validar los datos ingresados
-Mostrar una lista organizada de estudiantes
-Marcar asistencia y eliminar registros
+## Project Setup
 
-Esto mejora la organización y reduce errores humanos.
+```sh
+npm install
+```
 
-PREGUNTAS 
+### Compile and Hot-Reload for Development
 
-. ¿Qué es Vue.js y cuál es su función en la página web?
+```sh
+npm run dev
+```
 
-Vue.js es un framework de JavaScript que se utiliza para crear interfaces web dinámicas e interactivas. 
-En este proyecto su función principal es permitir que los datos que el usuario ingresa se reflejen automáticamente en la pantalla sin necesidad de recargar la página.
-Gracias a Vue, la aplicación puede actualizar la lista de estudiantes en tiempo real y manejar la interacción del usuario de manera sencilla.
+### Compile and Minify for Production
 
-. Variables reactivas utilizadas y su función
-
-En la aplicación se utilizaron las siguientes variables reactivas:
-
-nombre: almacena el nombre del estudiante ingresado en el input.
-edad: guarda la edad del estudiante.
-materia: almacena la materia seleccionada en el menú desplegable.
-estudiantes: es un arreglo donde se guardan todos los estudiantes registrados.
-error: se utiliza para mostrar mensajes cuando hay datos incorrectos o incompletos.
-
-Estas variables son importantes porque Vue las actualiza automáticamente en la interfaz cuando cambian.
-
-. Diferencia entre v-bind y v-model
-
-La directiva v-model se utiliza para enlazar los datos de los inputs con las variables del sistema, permitiendo que lo que el usuario escribe se guarde automáticamente.
-Por otro lado, v-bind se usa para asignar valores dinámicos a atributos HTML. En este proyecto se utilizó para mostrar información adicional en los elementos de la tabla.
-
-. Ejemplo de evento utilizado
-
-Un ejemplo de evento utilizado es @click, que se usa en el botón de registrar estudiante.
-Cuando el usuario hace clic, se ejecuta la función agregarEstudiante, que guarda los datos en el sistema.
-
-. Uso de v-for
-
-La directiva v-for se utilizó para recorrer la lista de estudiantes y mostrar cada uno en una fila de la tabla.
-Esto permite que cada vez que se agregue un nuevo estudiante, se muestre automáticamente en pantalla.
-
-. Uso de v-if
-
-La directiva v-if se utilizó para mostrar mensajes de error cuando los campos están vacíos o tienen datos incorrectos.
-También se usa para mostrar la tabla solo cuando existen registros. Esto ayuda a mejorar la experiencia del usuario y evita mostrar información innecesaria.
-
-. Validación de datos
-
-La validación de datos se realiza dentro del método agregarEstudiante, donde se verifica que todos los campos estén llenos y que la edad sea un número válido mayor que cero.
-Esto es importante porque evita que se guarden datos incorrectos en el sistema, lo que podría causar errores o afectar el funcionamiento de la aplicación.
+```sh
+npm run build
+```
