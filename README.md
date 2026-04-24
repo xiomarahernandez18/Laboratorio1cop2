@@ -4,7 +4,26 @@ Este repositorio consiste en plantear una situación problematica que se pueda r
 Estudiante: CARMEN XIOMARA HERNANDEZ CASTILLO 
 Codigo: SMSS107724
 
-Preguntas 
+SISTEMA DE REGISTROS DE ESTUDIANTES PARA TUTORIAS 
+
+SITUACION PROBLEMATICA 
+
+
+En muchos institutos y academias de la zona, el registro de estudiantes para tutorías se realiza de forma manual, lo que genera desorden, pérdida de información y dificultad para llevar control de asistencia.
+Este problema afecta al sector educativo, especialmente a centros de estudio que no cuentan con sistemas digitales.
+
+SOLUCION PROPUESTA 
+
+Se desarrolló una aplicación web con Vue.js que permite:
+
+Registrar estudiantes en tutorías
+Validar los datos ingresados
+Mostrar una lista organizada de estudiantes
+Marcar asistencia y eliminar registros
+
+Esto mejora la organización y reduce errores humanos.
+
+PREGUNTAS 
 
 . ¿Qué es Vue.js y cuál es su función en la página web?
 
